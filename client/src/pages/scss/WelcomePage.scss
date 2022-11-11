@@ -10,4 +10,14 @@
 		max-width: 90%;
 		width: 420px;
 	}
+
+	#contactForm {
+		width: 50%;
+	}
+
+	@media (max-width: 760px) {
+		#contactForm {
+			width: 90%;
+		}
+	}
 }
