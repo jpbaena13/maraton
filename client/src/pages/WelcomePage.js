@@ -32,12 +32,12 @@ const Home = () => (
 
       <div className="form-floating mb-3">
         <div class="form-check">
+        <label htmlFor="name">Interest</label>
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
           <label class="form-check-label" for="flexCheckDefault">
             Default checkbox
           </label>
         </div>
-        <label htmlFor="name">Last name</label>
         <div className="invalid-feedback">A name is required.</div>
       </div>
 
