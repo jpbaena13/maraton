@@ -1,12 +1,12 @@
 import requests from './requests';
 
-const API = `${_laravel.app_path}/core/api/v1`;
+const API = 'http://localhost:3000';
 
 /**
  * API Calls
  */
 export default {
-  user: {
+  default: {
     /**
      * Creates a new  <User> according to the given object
      *
@@ -16,7 +16,7 @@ export default {
      */
     create: async (user) => {
       const response = await requests.post(
-        `${API}/User`,
+        `${API}/e`,
         user
       );
 
@@ -75,6 +75,38 @@ export default {
      */
     all: async () => {
       const response = await requests.get(`${API}/User`);
+      return response;
+    }
+  },
+  entities: {
+    read: async (id) => {
+      const response = await requests.get(
+        `${API}/entities/${id}`
+      );
+
+      return response;
+    },
+    all: async () => {
+      const response = await requests.get(
+        `${API}/entities`
+      );
+
+      return response;
+    }
+  },
+  activities: {
+    read: async (id) => {
+      const response = await requests.get(
+        `${API}/activities/${id}`
+      );
+
+      return response;
+    },
+    all: async () => {
+      const response = await requests.get(
+        `${API}/activities`
+      );
+
       return response;
     }
   }
