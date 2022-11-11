@@ -1,0 +1,146 @@
+html, body, #app {
+	background-color: $body-bg;
+	color: $gray;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0;
+	width: 100%;
+}
+
+.color-blue { color: $blue; }
+.color-lightblue { color: $lightblue; }
+.color-darkblue { color: $darkblue; }
+.color-yellow { color: $yellow; }
+.color-lightyellow { color: $lightyellow; }
+.color-darkyellow { color: $darkyellow; }
+.color-green { color: $green; }
+.color-orange { color: $orange; }
+.color-gray { color: $gray; }
+.color-lightgray { color: $lightgray; }
+.color-white { color: $white; }
+.color-black { color: $black; }
+
+.bg-blue { background-color: $blue;}
+.bg-lightblue { background-color: $lightblue;}
+.bg-darkblue { background-color: $darkblue;}
+.bg-yellow { background-color: $yellow;}
+.bg-lightyellow { background-color: $lightyellow;}
+.bg-darkyellow { background-color: $darkyellow;}
+.bg-green { background-color: $green;}
+.bg-orange { background-color: $orange;}
+.bg-gray { background-color: $gray;}
+.bg-lightgray { background-color: $lightgray;}
+.bg-white { background-color: $white;}
+.bg-black { background-color: $black;}
+
+
+.unc-box {
+	background-color: $white;
+	border-radius: 5px;
+	margin: 2em auto;
+	max-width: 720px;
+	padding: 1em;
+}
+
+// Popup
+.unc-popup-container {
+	animation: _popupShow .5s linear forwards !important;
+
+	.unc-popup-wrapper {
+		.unc-popup-header {
+			font-weight: normal !important;
+			padding: .5em 1em !important;
+		}
+	}
+}
+
+@keyframes _popupShow {
+	from {
+		background-color: transparent;
+	}
+
+	to {
+		background-color: rgba(0,0,0,0.5);
+	}
+}
+
+// UNC-TEXT-ELLIPSIS
+.unc-text-ellipsis {
+	display: block;
+	line-height: 1.2em;
+	max-height: 4.8em;
+	overflow: hidden;
+	padding-right: 1em;
+	position: relative;
+	text-align: justify;
+
+	&:before {
+		bottom: 0;
+		content: '...';
+		position: absolute;
+		right: 0;
+	}
+
+	&:after {
+		background-color: white;
+		content: '';
+		height: 1em;
+		margin-top: 0.2em;
+		position: absolute;
+		right: 0;
+		width: 1em;
+	}
+}
+
+// ANTD Stepper
+.ant-steps-item-process .ant-steps-item-icon {
+	background-color: $blue !important;
+	border-color: $blue !important;
+}
+
+// ANTD Icons
+.anticon.anticon-loading.unc-loading {
+	display: block;
+	font-size: 2em;
+	padding: 1em;
+}
+.unc-help.anticon {
+	font-size: 20px;
+	margin: 0 1em;
+}
+.anticon.unc-btn-back {
+	background-color: $blue;
+	border-radius: 50%;
+	color: white;
+	font-size: 2em;
+	margin-top: .5em;
+	padding: .5em;
+}
+.unc-icon {
+	border: thin solid $lightgray;
+	cursor: pointer;
+	font-size: 1.2em;
+	padding: 7px;
+	margin: 0 3px;
+	transition: .5s all linear;
+
+	&.unc-liked {
+		background-color: $blue;
+		color: white;
+	}
+
+	&:hover {
+		background: $darkblue;
+		border-color: $darkblue;
+		color: white;
+	}
+}
+
+.unc-exception {
+	background-color: $white;
+	border-radius: 5px;
+	color: $gray;
+	margin: 1em auto;
+	padding: 2em;
+	width: 80%;
+}

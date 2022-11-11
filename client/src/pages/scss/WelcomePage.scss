@@ -1,0 +1,13 @@
+.unc-welcome {
+	align-items: center;
+	background-size: cover;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+
+	.unc-logo {
+		margin: 0 auto;
+		max-width: 90%;
+		width: 420px;
+	}
+}

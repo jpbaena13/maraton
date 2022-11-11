@@ -1,0 +1,108 @@
+{
+  "name": "platunico",
+  "version": "1.0.0",
+  "description": "Platunico Frontend By Único Digital S.A.S.",
+  "main": "app.js",
+  "scripts": {
+    "wp": "webpack",
+    "wp-dev": "webpack --config ./webpack.config.dev.js",
+    "wp:dev": "webpack-dev-server --config ./webpack.config.dev.js",
+    "test": "ava",
+    "build": "babel src --out-dir dist --copy-files"
+  },
+  "keywords": [
+    "react",
+    "platunico"
+  ],
+  "author": "Juan Baena",
+  "license": "ISC",
+  "peerDependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "animate.css": "^4.1.1",
+    "antd": "^4.9.2",
+    "bootstrap-scss": "^4.6.0",
+    "classnames": "^2.2.6",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-color": "^2.19.3",
+    "react-dom": "^16.10.2",
+    "react-easy-crop": "^3.1.1",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-time-ago": "^6.2.1",
+    "react-transition-group": "^4.3.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "unc-react-creator": "^1.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-modernizr-loader": "^5.0.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "animate.css": "^4.1.1",
+    "antd": "^4.9.2",
+    "bootstrap-scss": "^4.6.0",
+    "classnames": "^2.2.6",
+    "merge-json": "0.1.0-b.3",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-color": "^2.19.3",
+    "react-dom": "^16.10.2",
+    "react-easy-crop": "^3.1.1",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-time-ago": "^6.2.1",
+    "react-transition-group": "^4.3.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "unc-react-creator": "^1.6.0"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@2.0.0"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "resolveModules": {
+      "aliases": {
+        "lang": "./src/lang",
+        "api": "./src/api",
+        "actions": "./src/redux/actions",
+        "sass": "./src/assets/sass"
+      }
+    }
+  }
+}
